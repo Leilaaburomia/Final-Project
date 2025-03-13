@@ -1,10 +1,10 @@
 ---
 title: ESS 330 Project Proposals
 authors:
-  - name: Norah Jones
-    affiliation: The University
-    roles: writing
+  - name: Leila Aburomia
     corresponding: true
+  - name: Aldair Perez
+  - name: Noah Goodhart
 bibliography: references.bib
 ---
 
