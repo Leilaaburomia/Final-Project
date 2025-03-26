@@ -1,14 +1,24 @@
 project:
   type: manuscript
+  output-dir: docs
 
 manuscript:
   article: index.qmd
-  
+
+author: 
+  - name: "Leila Aburomia"
+    corresponding: true
+  - name: "Aldair Perez"
+  - name: "Noah Goodhardt"
+
+bibliography: references.bib 
+csl: https://www.zotero.org/styles/apa
 
 format:
   html:
     comments:
       hypothesis: true
+    title-block-banner: true
   docx: default
   jats: default
 

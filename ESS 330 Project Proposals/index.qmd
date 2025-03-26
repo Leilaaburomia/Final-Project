@@ -1,16 +1,19 @@
 ---
 title: ESS 330 Project Proposals
-authors:
-  - name: Leila Aburomia
+author:
+  - name: "Leila Aburomia"
     corresponding: true
-  - name: Aldair Perez
-  - name: Noah Goodhart
-bibliography: references.bib
+  - name: "Aldair Perez"
+  - name: "Noah Goodhardt"
 ---
+
+::: {.author-note}
+📩 *Corresponding author: Leila Aburomia 
+:::
 
 # 1.
 
-completed by: Leila Aburomia 
+completed by: Leila Aburomia
 
 ## Title:
 
@@ -18,7 +21,7 @@ Beavers' Impact on Water Quality
 
 ## Justification:
 
-Beavers have the ability to modify ecosystems to meet their ecological needs, profoundly impacting hydrology, geomorphology, ecology, and society. Known as ecosystem engineers, beavers and their dam building activities significantly alter water flow quality (Brazier et al. 2020). This project with use R to analyze how beavers influence water quality parameters such as dissolved oxygen, temperature, turbidity, and nutrient levels. In degraded environments, beavers' dam building can improve both physical and biological diversity (Law et al. 2016). This diversity is essential for the functionality of many stream types (Law et al. 2016). Additionally, research has shown that beaver dams can help mitigate climatic hydrological extremes through their impacts on water residence time and nutrient fluxes (Dewey et al. 2022). Understanding how their activities influence water quality is crucial for ecosystem management, conservation, and climate resilience. Local beaver motifications can help inform hydrology decisions to increase the health and functionality of our watersheds.
+Beavers have the ability to modify ecosystems to meet their ecological needs, profoundly impacting hydrology, geomorphology, ecology, and society. Known as ecosystem engineers, beavers and their dam building activities significantly alter water flow quality (@Brazier2020). This project with use R to analyze how beavers influence water quality parameters such as dissolved oxygen, temperature, turbidity, and nutrient levels. In degraded environments, beavers' dam building can improve both physical and biological diversity (@Law2016). This diversity is essential for the functionality of many stream types (@Law2016). Additionally, research has shown that beaver dams can help mitigate climatic hydrological extremes through their impacts on water residence time and nutrient fluxes (@Dewey2022). Understanding how their activities influence water quality is crucial for ecosystem management, conservation, and climate resilience. Local beaver motifications can help inform hydrology decisions to increase the health and functionality of our watersheds.
 
 ## Research Objective:
 
@@ -26,30 +29,160 @@ The specific objective that I aim to achieve is how beaver activity influences w
 
 ## Proposed Methods:
 
-This study will be done on a spatial scale and investigate how water quality parameters change depending on the presence of beavers. Beaver presence data can be found through Colorado Natural Heritage Program. They have a Colorado River basin Dynamic Wetland Mapper that includes beaver ponds. (https://csurams.maps.arcgis.com/apps/webappviewer/index.html?id=2fa3527926d2415d8ea0786838b712bd). Additionally, USGS has current water data for Colorado that includes many water quality parameters  (https://waterdata.usgs.gov/co/nwis/rt). Variables we will use are beaver presence and water quality parameters such as nutrients and physical values. For our data analysis we will first filter data for beaver vs non- beaver sites. Our statistical tests will include summary(), and ggplot2 to visualize distributions.
-Then we will create boxplots to test relationships between beaver presence and water quality parameters. We will use the Shapiro-Wilk Test for Normality to test the distribution of the data and use T-Tests to compare means between the two groups (beaver vs. non-beaver). 
-
+This study will be done on a spatial scale and investigate how water quality parameters change depending on the presence of beavers. Beaver presence data can be found through Colorado Natural Heritage Program. They have a Colorado River basin Dynamic Wetland Mapper that includes beaver ponds. (https://csurams.maps.arcgis.com/apps/webappviewer/index.html?id=2fa3527926d2415d8ea0786838b712bd). Additionally, USGS has current water data for Colorado that includes many water quality parameters (https://waterdata.usgs.gov/co/nwis/rt). Variables we will use are beaver presence and water quality parameters such as nutrients and physical values. For our data analysis we will first filter data for beaver vs non- beaver sites. Our statistical tests will include summary(), and ggplot2 to visualize distributions. Then we will create boxplots to test relationships between beaver presence and water quality parameters. We will use the Shapiro-Wilk Test for Normality to test the distribution of the data and use T-Tests to compare means between the two groups (beaver vs. non-beaver).
 
 ## Expected Outcomes:
 
-I expect to find turbidity lower in beaver - occupied sites which suggests that beaver dams trap sediment and improve water quality. I would also expect DO to be lower in beaver ponds, indicating that shower water movement and organic decay reduces oxygen levels. Lastly, I expect to find nutrient levels higher in beaver ponds, showing that organic matter accumulation influences nutrient cycling. 
-
-### References:
-
-Law, A., McLean, F., Willby, N. J. (2016). Habitat engineering by beaver benefits aquatic biodiversity and ecosystem processes in agricultural streams. Freshwater Biology, 61(4). https://doi-org.ezproxy2.library.colostate.edu/10.1111/fwb.12721
-
-Brazier, R. E., Puttock, A., Graham, H, A. et al. (2020). Beaver: Nature's ecosystem engineers. WIREs Water, 8(1). https://doi.org/10.1002/wat2.1494
-
-Dewey, C., Fox, P.M., Bouskill, N.J. et al. Beaver dams overshadow climate extremes in controlling riparian hydrology and water quality. Nat Commun 13, 6509 (2022). https://doi.org/10.1038/s41467-022-34022-0
+I expect to find turbidity lower in beaver - occupied sites which suggests that beaver dams trap sediment and improve water quality. I would also expect DO to be lower in beaver ponds, indicating that shower water movement and organic decay reduces oxygen levels. Lastly, I expect to find nutrient levels higher in beaver ponds, showing that organic matter accumulation influences nutrient cycling.
 
 # 2.
 
+completed by: Leila Aburomia 
+
 ## Title:
+
+Climate Change Impacts on Peak Flow Events in the Upper Colorado River Basin
 
 ## Justification:
 
+This project is significant because it addresses critical challenges within climate change, hydrology, water management, and environmental sustainability. Climate change impacts of hydrology is an understudied topic. Research has shown that climate change caused alterations in the colorado river basin are likely occurring now and will increase over the next several decades (@Nash1993). The Upper Colorado River Basin is one of the most vital watersheds in the western United States. The Colorado River supplies water to 27 million people across seven U.S states and Mexico (@Gao2011). In the Colorado River Basin, projected runoff changes are impacted by snow cover change, temperature, and precipitation (@Gao2011). The basin is especially sensitive to shifts in climate due to vulnerable discharge, which is exacerbated by it's semiarid environment. Given the basin's increasing population, need for water, and warming climate, variations in the Colorado River flows are critically important. 
+
+
 ## Research Objective:
+
+The project objective is to analyze how climate change is altering peak flow events in the Upper Colorado watershed using historical observations and future climate projections. The research question is as follows, How is climate change affecting the magnitude and timing of peak flow events in the Upper Colorado watershed, and what are the projected changes under future climate scenarios? The hypothesis is that Future climate projections indicate significant changes in peak flow magnitude, timing, or frequency under warming scenarios. 
 
 ## Proposed Methods:
 
+Using data from USGS Water Information System (https://waterdata.usgs.gov/nwis?) we will extract data about historical precipitation and temperature, and future temperature and precipitation projections using the climateR package. First we will identify annual peak flow events from the USGS data and use Mann-Kendall trend tests (trend package) to detect increasing/decreasing trends. Then we will compare correlations between peak flows with precipitation and temperature trends. Next we will use the CMIP6 climate projections for precipitation and temperature (climateR package) and apply hydrological models for stream flow simulations to predict how magnitudes and frequencies may change under warming climate conditions. This project will be carried on a temporal scale. 
+
 ## Expected Outcomes:
+
+Based on data, expected outcomes will include historical analysis of peak flow trends in the Upper Colorado, and projected changes in peak flows under different warming conditions. These findings are important because understanding how climate change is affecting peak flow events in the Upper Colorado watershed has critical implications for water management, ecosystem health, and flood risk assessments and mitigation.
+
+## 3. 
+
+completed by: Aldair Perez
+
+## Title:
+
+The Popularity of Renewable and Non-Renewable Energy Sources in the U.S.
+
+
+## Justification:
+
+This project aims to understand how much of the U.S is coming from renewable energy and non-renewable energy The findings will present us exactly where the energy comes from, like a percentage from a source. We are currently living in a unique time where we are seeing the emergence of renewables (slow development, incentives, and technological problems) and the continued use and advancements of non-renewables, like fracking shale gas (@Furlan2017). The rise of renewables and making non-renewables cleaner/efficient is due in part to global warming. According to empirical research, 90% of CO2 emissions are from fossil fuels (@Greiner2013). If we want to mitigate the effects of global warming, we should implement cleaner solutions to our energy resources, like efficient cars/appliances and fracking regulations.
+
+
+## Research Objective:
+
+We will identify how much each renewable and non-renewable energy contributes to the amount of energy used in the U.S.
+
+## Proposed Methods:
+
+We are going to look for datasets that have the amount of energy produced by each source of energy. The timeline should be recent, so the maximum is looking at the energy production during the past 10 years. The country that will be used is the United States of America. We will calculate the total energy and find
+the percentage each source contributes to the total energy produced. The data used may be from this website: Opendata - U.S. Energy Information Administration (EIA)
+
+## Expected Outcomes:
+
+We are looking at the percentage used to give us an
+understanding of the popularity (or lack of popularity) for each source. The significance of this is to understand where energy is coming from since we are in a time where society is becoming more environmentally conscious.
+
+## 4. 
+
+completed by: Aldair Perez
+
+## Title: 
+
+The Rise and Impact of H5N1 Cases in the U.S
+
+## Justification:
+
+This project aims to understand the impacts of bird flu in domesticated animals, like chickens and cows. With the rise of prices of related foods, like beef, eggs, and chickens, this is causing food supply problems. In 2020, there’s an outbreak of avian influenza (H5N1) and it has spread to not only
+chickens, but cows (@Abbasi2024). This is an obvious cause of concern to the food supply and human health. According to USDA, over 37 million poultry have died,
+chicken breast prices rose 27%, and egg prices rose 45% (@Hunter2022). This recent outbreak, along with COVID-19, has put pressure to human and animal
+health as well as the state of the economy. Thus, it’s vital that we have a good understanding of the virus, the numbers, and how to respond to this outbreak.
+
+## Research Objective:
+
+We will identify the cases and deaths of the H5N1 virus towards animals like cows and chickens in the U.S.
+
+## Proposed Methods:
+
+We will look for datasets that give us information as to who has the virus infected, the cases, and deaths from the hosts (likely chickens, cows, and humans). Since this is a recent outbreak, we will look at the data from the past 5 years. We will be looking at the cases here in the U.S. We will find the dataset from
+these links: H5 Bird Flu: Current Situation | Bird Flu | CDC, USDA Reported H5N1 Bird Flu Detections in Poultry | Bird Flu | CDC, Avian influenza
+
+
+## Expected Outcomes:
+
+We are looking at how many cases and deaths the virus has had on chickens, cows, and people. The significance of this is to understand the extent to which the flu has impacted the populations.
+
+## 5. 
+
+completed by: Noah Goodhart
+
+## Title:
+
+Urban Green Space Accessibility and Its Role in Sustainable City Development
+
+
+## Justification:
+
+Urban green spaces are critical for sustainable cities, improving biodiversity, mental health, and climate resilience (@WHO2016). However, unequal access to green spaces worsens environmental injustice, particularly in low-income neighborhoods (@Rigolon2018). This project assesses whether income levels correlate with green space accessibility in U.S. cities, supporting the UN Sustainable Development Goal (SDG) 11 for inclusive, sustainable urbanization.
+
+## Research Objective:
+
+Objective: Evaluate the relationship between neighborhood income levels and green space coverage and assess if there is a significant correlation between the two.
+
+Hypothesis: Lower-income neighborhoods will have significantly less green space per capita than higher-income areas.
+
+## Proposed Methods:
+
+Datasets:
+
+1. Green space data: NASA’s MODIS NDVI (Normalized Difference Vegetation Index) via the MODIStsp R package.
+
+2. Income & demographic data: U.S. Census Bureau’s American Community Survey (ACS) via the tidycensus R package. Scope: 5 major U.S. cities (2015–2020). Analysis:
+
+· Spatial mapping with sf and ggplot2.
+
+· Correlation tests (Pearson’s r) between median income and NDVI values.
+
+## Expected Outcomes:
+
+We expect a positive correlation between income and green space access. The results could guide equitable urban sustainability planning.
+
+## 6. 
+
+completed by: Noah Goodhart
+
+## Title:
+
+Drought Severity and Agricultural Water Use in Colorado
+
+## Justification:
+
+Colorado’s water resources are under increasing stress due to climate change, with the 2002–2022 period marking the driest two decades in 1,200 years (@Williams2022). Agriculture accounts for ~80% of the state’s water use, yet drought adaptation strategies (e.g., improved irrigation) remain unevenly adopted (@CWCB2021). This project evaluates whether drought severity correlates with reduced agricultural water withdrawals, supporting sustainable water management under SDG 6.
+
+## Research Objective:
+
+Objective: Test if drought severity (PDSI) predicts changes in agricultural water use in Colorado. Hypothesis: Counties with severe drought (PDSI ≤ −3) will show greater declines in agricultural water withdrawals compared to less-affected counties.
+
+## Proposed Methods:
+
+Datasets (all R-friendly): 
+1. Drought Data: Palmer Drought Severity Index (PDSI) for Colorado from NOAA (NCEI), accessed via rnoaa. 
+
+2. Water Use: Colorado’s Agricultural Water Use Data (CWCB) (CSV/Excel).
+
+3. Crop Data: USDA CropScape (Colorado-specific) via the FedData package.
+
+Scope: Colorado counties (2010–2020). Analysis:
+
+· Time-series regression (lm()) between PDSI and water withdrawals.
+
+· Spatial maps of drought vs. water use trends using ggplot2/sf.
+
+## Expected Outcomes:
+
+We anticipate counties with severe drought will show reduced agricultural water use, reflecting adaptation efforts. Results could guide policies to incentive water-efficient farming.
