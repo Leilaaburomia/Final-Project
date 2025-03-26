@@ -8,5 +8,48 @@ authors:
 bibliography: references.bib
 ---
 
-## Section
-This is a simple placeholder for the manuscript's main document [@knuth84].
+# 1.
+
+completed by: Leila Aburomia 
+
+## Title:
+
+Beavers' Impact on Water Quality
+
+## Justification:
+
+Beavers have the ability to modify ecosystems to meet their ecological needs, profoundly impacting hydrology, geomorphology, ecology, and society. Known as ecosystem engineers, beavers and their dam building activities significantly alter water flow quality (Brazier et al. 2020). This project with use R to analyze how beavers influence water quality parameters such as dissolved oxygen, temperature, turbidity, and nutrient levels. In degraded environments, beavers' dam building can improve both physical and biological diversity (Law et al. 2016). This diversity is essential for the functionality of many stream types (Law et al. 2016). Additionally, research has shown that beaver dams can help mitigate climatic hydrological extremes through their impacts on water residence time and nutrient fluxes (Dewey et al. 2022). Understanding how their activities influence water quality is crucial for ecosystem management, conservation, and climate resilience. Local beaver motifications can help inform hydrology decisions to increase the health and functionality of our watersheds.
+
+## Research Objective:
+
+The specific objective that I aim to achieve is how beaver activity influences water quality parameters. Possible hypothesizes may include; beaver-occupied streams have lower turbidity due to sediment trapping, beaver ponds reduce dissolved oxygen compared to fast-flowing streams, beaver activity increases nutrient levels due to organic matter decomposition, and beaver ponds act as temperature buffers, reducing extreme fluctuations.
+
+## Proposed Methods:
+
+This study will be done on a spatial scale and investigate how water quality parameters change depending on the presence of beavers. Beaver presence data can be found through Colorado Natural Heritage Program. They have a Colorado River basin Dynamic Wetland Mapper that includes beaver ponds. (https://csurams.maps.arcgis.com/apps/webappviewer/index.html?id=2fa3527926d2415d8ea0786838b712bd). Additionally, USGS has current water data for Colorado that includes many water quality parameters  (https://waterdata.usgs.gov/co/nwis/rt). Variables we will use are beaver presence and water quality parameters such as nutrients and physical values. For our data analysis we will first filter data for beaver vs non- beaver sites. Our statistical tests will include summary(), and ggplot2 to visualize distributions.
+Then we will create boxplots to test relationships between beaver presence and water quality parameters. We will use the Shapiro-Wilk Test for Normality to test the distribution of the data and use T-Tests to compare means between the two groups (beaver vs. non-beaver). 
+
+
+## Expected Outcomes:
+
+I expect to find turbidity lower in beaver - occupied sites which suggests that beaver dams trap sediment and improve water quality. I would also expect DO to be lower in beaver ponds, indicating that shower water movement and organic decay reduces oxygen levels. Lastly, I expect to find nutrient levels higher in beaver ponds, showing that organic matter accumulation influences nutrient cycling. 
+
+### References:
+
+Law, A., McLean, F., Willby, N. J. (2016). Habitat engineering by beaver benefits aquatic biodiversity and ecosystem processes in agricultural streams. Freshwater Biology, 61(4). https://doi-org.ezproxy2.library.colostate.edu/10.1111/fwb.12721
+
+Brazier, R. E., Puttock, A., Graham, H, A. et al. (2020). Beaver: Nature's ecosystem engineers. WIREs Water, 8(1). https://doi.org/10.1002/wat2.1494
+
+Dewey, C., Fox, P.M., Bouskill, N.J. et al. Beaver dams overshadow climate extremes in controlling riparian hydrology and water quality. Nat Commun 13, 6509 (2022). https://doi.org/10.1038/s41467-022-34022-0
+
+# 2.
+
+## Title:
+
+## Justification:
+
+## Research Objective:
+
+## Proposed Methods:
+
+## Expected Outcomes:

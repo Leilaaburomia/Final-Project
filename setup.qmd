@@ -1,9 +1,6 @@
 ---
 title: "Project Setup"
 author: Leila Aburomia
-  corresponding: true
-author: Aldair Perez
-author: Noah Goodhart
 format: html
 editor: visual
 ---
