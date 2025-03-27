@@ -1,0 +1,17 @@
+{
+  "hash": "b60f68e6c2d6c7ae65bcf7612f545b06",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Project Setup\"\nauthor: Leila Aburomia\nformat: html\neditor: visual\n---\n\n::: {.cell}\n\n:::\n\n\n\nYou can add options to executable code like this\n\n\n\n::: {.cell}\n\n```{.r .cell-code .hidden}\n#| echo: false\n2 * 2\n```\n\n::: {.cell-output .cell-output-stdout}\n\n```\n[1] 4\n```\n\n\n:::\n:::\n\n\n\nThe `echo: false` option disables the printing of code (only output is displayed).\n",
+    "supporting": [
+      "setup_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

@@ -1,0 +1,606 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving
+and Interchange DTD v1.2 20190208//EN" "JATS-archivearticle1.dtd">
+
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" dtd-version="1.2" article-type="other">
+
+<front>
+
+
+<article-meta>
+
+
+<title-group>
+<article-title>ESS 330 Project Proposals</article-title>
+</title-group>
+
+<contrib-group>
+<contrib contrib-type="author" corresp="yes">
+<name>
+<surname>Aburomia</surname>
+<given-names>Leila</given-names>
+</name>
+<string-name>Leila Aburomia</string-name>
+
+<xref ref-type="corresp" rid="cor-1">&#x002A;</xref>
+</contrib>
+<contrib contrib-type="author">
+<name>
+<surname>Perez</surname>
+<given-names>Aldair</given-names>
+</name>
+<string-name>Aldair Perez</string-name>
+
+</contrib>
+<contrib contrib-type="author">
+<name>
+<surname>Goodhardt</surname>
+<given-names>Noah</given-names>
+</name>
+<string-name>Noah Goodhardt</string-name>
+
+</contrib>
+</contrib-group>
+<author-notes>
+<corresp id="cor-1"></corresp>
+</author-notes>
+
+
+
+
+
+
+
+
+
+<history></history>
+
+
+
+
+
+
+</article-meta>
+
+</front>
+
+<body>
+<p>📩 *Corresponding author: Leila Aburomia</p>
+<sec id="section">
+  <title>1.</title>
+  <p>completed by: Leila Aburomia</p>
+  <sec id="title">
+    <title>Title:</title>
+    <p>Beavers’ Impact on Water Quality</p>
+  </sec>
+  <sec id="justification">
+    <title>Justification:</title>
+    <p>Beavers have the ability to modify ecosystems to meet their
+    ecological needs, profoundly impacting hydrology, geomorphology,
+    ecology, and society. Known as ecosystem engineers, beavers and
+    their dam building activities significantly alter water flow quality
+    (Brazier
+    (<xref alt="2020" rid="ref-Brazier2020" ref-type="bibr">2020</xref>)).
+    This project with use R to analyze how beavers influence water
+    quality parameters such as dissolved oxygen, temperature, turbidity,
+    and nutrient levels. In degraded environments, beavers’ dam building
+    can improve both physical and biological diversity (Law
+    (<xref alt="2016" rid="ref-Law2016" ref-type="bibr">2016</xref>)).
+    This diversity is essential for the functionality of many stream
+    types (Law
+    (<xref alt="2016" rid="ref-Law2016" ref-type="bibr">2016</xref>)).
+    Additionally, research has shown that beaver dams can help mitigate
+    climatic hydrological extremes through their impacts on water
+    residence time and nutrient fluxes (Dewey
+    (<xref alt="2022" rid="ref-Dewey2022" ref-type="bibr">2022</xref>)).
+    Understanding how their activities influence water quality is
+    crucial for ecosystem management, conservation, and climate
+    resilience. Local beaver motifications can help inform hydrology
+    decisions to increase the health and functionality of our
+    watersheds.</p>
+  </sec>
+  <sec id="research-objective">
+    <title>Research Objective:</title>
+    <p>The specific objective that I aim to achieve is how beaver
+    activity influences water quality parameters. Possible hypothesizes
+    may include; beaver-occupied streams have lower turbidity due to
+    sediment trapping, beaver ponds reduce dissolved oxygen compared to
+    fast-flowing streams, beaver activity increases nutrient levels due
+    to organic matter decomposition, and beaver ponds act as temperature
+    buffers, reducing extreme fluctuations.</p>
+  </sec>
+  <sec id="proposed-methods">
+    <title>Proposed Methods:</title>
+    <p>This study will be done on a spatial scale and investigate how
+    water quality parameters change depending on the presence of
+    beavers. Beaver presence data can be found through Colorado Natural
+    Heritage Program. They have a Colorado River basin Dynamic Wetland
+    Mapper that includes beaver ponds.
+    (https://csurams.maps.arcgis.com/apps/webappviewer/index.html?id=2fa3527926d2415d8ea0786838b712bd).
+    Additionally, USGS has current water data for Colorado that includes
+    many water quality parameters
+    (https://waterdata.usgs.gov/co/nwis/rt). Variables we will use are
+    beaver presence and water quality parameters such as nutrients and
+    physical values. For our data analysis we will first filter data for
+    beaver vs non- beaver sites. Our statistical tests will include
+    summary(), and ggplot2 to visualize distributions. Then we will
+    create boxplots to test relationships between beaver presence and
+    water quality parameters. We will use the Shapiro-Wilk Test for
+    Normality to test the distribution of the data and use T-Tests to
+    compare means between the two groups (beaver vs. non-beaver).</p>
+  </sec>
+  <sec id="expected-outcomes">
+    <title>Expected Outcomes:</title>
+    <p>I expect to find turbidity lower in beaver - occupied sites which
+    suggests that beaver dams trap sediment and improve water quality. I
+    would also expect DO to be lower in beaver ponds, indicating that
+    shower water movement and organic decay reduces oxygen levels.
+    Lastly, I expect to find nutrient levels higher in beaver ponds,
+    showing that organic matter accumulation influences nutrient
+    cycling.</p>
+  </sec>
+</sec>
+<sec id="section-1">
+  <title>2.</title>
+  <p>completed by: Leila Aburomia</p>
+  <sec id="title-1">
+    <title>Title:</title>
+    <p>Climate Change Impacts on Peak Flow Events in the Upper Colorado
+    River Basin</p>
+  </sec>
+  <sec id="justification-1">
+    <title>Justification:</title>
+    <p>This project is significant because it addresses critical
+    challenges within climate change, hydrology, water management, and
+    environmental sustainability. Climate change impacts of hydrology is
+    an understudied topic. Research has shown that climate change caused
+    alterations in the colorado river basin are likely occurring now and
+    will increase over the next several decades (Nash
+    (<xref alt="1993" rid="ref-Nash1993" ref-type="bibr">1993</xref>)).
+    The Upper Colorado River Basin is one of the most vital watersheds
+    in the western United States. The Colorado River supplies water to
+    27 million people across seven U.S states and Mexico (Gao
+    (<xref alt="2011" rid="ref-Gao2011" ref-type="bibr">2011</xref>)).
+    In the Colorado River Basin, projected runoff changes are impacted
+    by snow cover change, temperature, and precipitation (Gao
+    (<xref alt="2011" rid="ref-Gao2011" ref-type="bibr">2011</xref>)).
+    The basin is especially sensitive to shifts in climate due to
+    vulnerable discharge, which is exacerbated by it’s semiarid
+    environment. Given the basin’s increasing population, need for
+    water, and warming climate, variations in the Colorado River flows
+    are critically important.</p>
+  </sec>
+  <sec id="research-objective-1">
+    <title>Research Objective:</title>
+    <p>The project objective is to analyze how climate change is
+    altering peak flow events in the Upper Colorado watershed using
+    historical observations and future climate projections. The research
+    question is as follows, How is climate change affecting the
+    magnitude and timing of peak flow events in the Upper Colorado
+    watershed, and what are the projected changes under future climate
+    scenarios? The hypothesis is that Future climate projections
+    indicate significant changes in peak flow magnitude, timing, or
+    frequency under warming scenarios.</p>
+  </sec>
+  <sec id="proposed-methods-1">
+    <title>Proposed Methods:</title>
+    <p>Using data from USGS Water Information System
+    (https://waterdata.usgs.gov/nwis?) we will extract data about
+    historical precipitation and temperature, and future temperature and
+    precipitation projections using the climateR package. First we will
+    identify annual peak flow events from the USGS data and use
+    Mann-Kendall trend tests (trend package) to detect
+    increasing/decreasing trends. Then we will compare correlations
+    between peak flows with precipitation and temperature trends. Next
+    we will use the CMIP6 climate projections for precipitation and
+    temperature (climateR package) and apply hydrological models for
+    stream flow simulations to predict how magnitudes and frequencies
+    may change under warming climate conditions. This project will be
+    carried on a temporal scale.</p>
+  </sec>
+  <sec id="expected-outcomes-1">
+    <title>Expected Outcomes:</title>
+    <p>Based on data, expected outcomes will include historical analysis
+    of peak flow trends in the Upper Colorado, and projected changes in
+    peak flows under different warming conditions. These findings are
+    important because understanding how climate change is affecting peak
+    flow events in the Upper Colorado watershed has critical
+    implications for water management, ecosystem health, and flood risk
+    assessments and mitigation.</p>
+  </sec>
+  <sec id="section-2">
+    <title>3.</title>
+    <p>completed by: Aldair Perez</p>
+  </sec>
+  <sec id="title-2">
+    <title>Title:</title>
+    <p>The Popularity of Renewable and Non-Renewable Energy Sources in
+    the U.S.</p>
+  </sec>
+  <sec id="justification-2">
+    <title>Justification:</title>
+    <p>This project aims to understand how much of the U.S is coming
+    from renewable energy and non-renewable energy The findings will
+    present us exactly where the energy comes from, like a percentage
+    from a source. We are currently living in a unique time where we are
+    seeing the emergence of renewables (slow development, incentives,
+    and technological problems) and the continued use and advancements
+    of non-renewables, like fracking shale gas (Furlan
+    (<xref alt="2017" rid="ref-Furlan2017" ref-type="bibr">2017</xref>)).
+    The rise of renewables and making non-renewables cleaner/efficient
+    is due in part to global warming. According to empirical research,
+    90% of CO2 emissions are from fossil fuels (Greiner
+    (<xref alt="2013" rid="ref-Greiner2013" ref-type="bibr">2013</xref>)).
+    If we want to mitigate the effects of global warming, we should
+    implement cleaner solutions to our energy resources, like efficient
+    cars/appliances and fracking regulations.</p>
+  </sec>
+  <sec id="research-objective-2">
+    <title>Research Objective:</title>
+    <p>We will identify how much each renewable and non-renewable energy
+    contributes to the amount of energy used in the U.S.</p>
+  </sec>
+  <sec id="proposed-methods-2">
+    <title>Proposed Methods:</title>
+    <p>We are going to look for datasets that have the amount of energy
+    produced by each source of energy. The timeline should be recent, so
+    the maximum is looking at the energy production during the past 10
+    years. The country that will be used is the United States of
+    America. We will calculate the total energy and find the percentage
+    each source contributes to the total energy produced. The data used
+    may be from this website: Opendata - U.S. Energy Information
+    Administration (EIA)</p>
+  </sec>
+  <sec id="expected-outcomes-2">
+    <title>Expected Outcomes:</title>
+    <p>We are looking at the percentage used to give us an understanding
+    of the popularity (or lack of popularity) for each source. The
+    significance of this is to understand where energy is coming from
+    since we are in a time where society is becoming more
+    environmentally conscious.</p>
+  </sec>
+  <sec id="section-3">
+    <title>4.</title>
+    <p>completed by: Aldair Perez</p>
+  </sec>
+  <sec id="title-3">
+    <title>Title:</title>
+    <p>The Rise and Impact of H5N1 Cases in the U.S</p>
+  </sec>
+  <sec id="justification-3">
+    <title>Justification:</title>
+    <p>This project aims to understand the impacts of bird flu in
+    domesticated animals, like chickens and cows. With the rise of
+    prices of related foods, like beef, eggs, and chickens, this is
+    causing food supply problems. In 2020, there’s an outbreak of avian
+    influenza (H5N1) and it has spread to not only chickens, but cows
+    (Abbasi
+    (<xref alt="2024" rid="ref-Abbasi2024" ref-type="bibr">2024</xref>)).
+    This is an obvious cause of concern to the food supply and human
+    health. According to USDA, over 37 million poultry have died,
+    chicken breast prices rose 27%, and egg prices rose 45% (Hunter
+    (<xref alt="2022" rid="ref-Hunter2022" ref-type="bibr">2022</xref>)).
+    This recent outbreak, along with COVID-19, has put pressure to human
+    and animal health as well as the state of the economy. Thus, it’s
+    vital that we have a good understanding of the virus, the numbers,
+    and how to respond to this outbreak.</p>
+  </sec>
+  <sec id="research-objective-3">
+    <title>Research Objective:</title>
+    <p>We will identify the cases and deaths of the H5N1 virus towards
+    animals like cows and chickens in the U.S.</p>
+  </sec>
+  <sec id="proposed-methods-3">
+    <title>Proposed Methods:</title>
+    <p>We will look for datasets that give us information as to who has
+    the virus infected, the cases, and deaths from the hosts (likely
+    chickens, cows, and humans). Since this is a recent outbreak, we
+    will look at the data from the past 5 years. We will be looking at
+    the cases here in the U.S. We will find the dataset from these
+    links: H5 Bird Flu: Current Situation | Bird Flu | CDC, USDA
+    Reported H5N1 Bird Flu Detections in Poultry | Bird Flu | CDC, Avian
+    influenza</p>
+  </sec>
+  <sec id="expected-outcomes-3">
+    <title>Expected Outcomes:</title>
+    <p>We are looking at how many cases and deaths the virus has had on
+    chickens, cows, and people. The significance of this is to
+    understand the extent to which the flu has impacted the
+    populations.</p>
+  </sec>
+  <sec id="section-4">
+    <title>5.</title>
+    <p>completed by: Noah Goodhart</p>
+  </sec>
+  <sec id="title-4">
+    <title>Title:</title>
+    <p>Urban Green Space Accessibility and Its Role in Sustainable City
+    Development</p>
+  </sec>
+  <sec id="justification-4">
+    <title>Justification:</title>
+    <p>Urban green spaces are critical for sustainable cities, improving
+    biodiversity, mental health, and climate resilience (Organization
+    (<xref alt="2016" rid="ref-WHO2016" ref-type="bibr">2016</xref>)).
+    However, unequal access to green spaces worsens environmental
+    injustice, particularly in low-income neighborhoods (Rigolon
+    (<xref alt="2018" rid="ref-Rigolon2018" ref-type="bibr">2018</xref>)).
+    This project assesses whether income levels correlate with green
+    space accessibility in U.S. cities, supporting the UN Sustainable
+    Development Goal (SDG) 11 for inclusive, sustainable
+    urbanization.</p>
+  </sec>
+  <sec id="research-objective-4">
+    <title>Research Objective:</title>
+    <p>Objective: Evaluate the relationship between neighborhood income
+    levels and green space coverage and assess if there is a significant
+    correlation between the two.</p>
+    <p>Hypothesis: Lower-income neighborhoods will have significantly
+    less green space per capita than higher-income areas.</p>
+  </sec>
+  <sec id="proposed-methods-4">
+    <title>Proposed Methods:</title>
+    <p>Datasets:</p>
+    <list list-type="order">
+      <list-item>
+        <p>Green space data: NASA’s MODIS NDVI (Normalized Difference
+        Vegetation Index) via the MODIStsp R package.</p>
+      </list-item>
+      <list-item>
+        <p>Income &amp; demographic data: U.S. Census Bureau’s American
+        Community Survey (ACS) via the tidycensus R package. Scope: 5
+        major U.S. cities (2015–2020). Analysis:</p>
+      </list-item>
+    </list>
+    <p>· Spatial mapping with sf and ggplot2.</p>
+    <p>· Correlation tests (Pearson’s r) between median income and NDVI
+    values.</p>
+  </sec>
+  <sec id="expected-outcomes-4">
+    <title>Expected Outcomes:</title>
+    <p>We expect a positive correlation between income and green space
+    access. The results could guide equitable urban sustainability
+    planning.</p>
+  </sec>
+  <sec id="section-5">
+    <title>6.</title>
+    <p>completed by: Noah Goodhart</p>
+  </sec>
+  <sec id="title-5">
+    <title>Title:</title>
+    <p>Drought Severity and Agricultural Water Use in Colorado</p>
+  </sec>
+  <sec id="justification-5">
+    <title>Justification:</title>
+    <p>Colorado’s water resources are under increasing stress due to
+    climate change, with the 2002–2022 period marking the driest two
+    decades in 1,200 years (Williams
+    (<xref alt="2022" rid="ref-Williams2022" ref-type="bibr">2022</xref>)).
+    Agriculture accounts for ~80% of the state’s water use, yet drought
+    adaptation strategies (e.g., improved irrigation) remain unevenly
+    adopted (CWCB
+    (<xref alt="n.d." rid="ref-CWCB2021" ref-type="bibr">n.d.</xref>)).
+    This project evaluates whether drought severity correlates with
+    reduced agricultural water withdrawals, supporting sustainable water
+    management under SDG 6.</p>
+  </sec>
+  <sec id="research-objective-5">
+    <title>Research Objective:</title>
+    <p>Objective: Test if drought severity (PDSI) predicts changes in
+    agricultural water use in Colorado. Hypothesis: Counties with severe
+    drought (PDSI ≤ −3) will show greater declines in agricultural water
+    withdrawals compared to less-affected counties.</p>
+  </sec>
+  <sec id="proposed-methods-5">
+    <title>Proposed Methods:</title>
+    <p>Datasets (all R-friendly): 1. Drought Data: Palmer Drought
+    Severity Index (PDSI) for Colorado from NOAA (NCEI), accessed via
+    rnoaa.</p>
+    <list list-type="order">
+      <list-item>
+        <label>2.</label>
+        <p>Water Use: Colorado’s Agricultural Water Use Data (CWCB)
+        (CSV/Excel).</p>
+      </list-item>
+      <list-item>
+        <label>3.</label>
+        <p>Crop Data: USDA CropScape (Colorado-specific) via the FedData
+        package.</p>
+      </list-item>
+    </list>
+    <p>Scope: Colorado counties (2010–2020). Analysis:</p>
+    <p>· Time-series regression (lm()) between PDSI and water
+    withdrawals.</p>
+    <p>· Spatial maps of drought vs. water use trends using
+    ggplot2/sf.</p>
+  </sec>
+  <sec id="expected-outcomes-5">
+    <title>Expected Outcomes:</title>
+    <p>We anticipate counties with severe drought will show reduced
+    agricultural water use, reflecting adaptation efforts. Results could
+    guide policies to incentive water-efficient farming.</p>
+  </sec>
+</sec>
+</body>
+
+<back>
+<ref-list>
+  <title></title>
+  <ref id="ref-Law2016">
+    <element-citation publication-type="article-journal">
+      <person-group person-group-type="author">
+        <name><surname>Law</surname><given-names>McLean</given-names><suffix>A.</suffix></name>
+      </person-group>
+      <article-title>Habitat engineering by beaver benefits aquatic biodiversity and ecosystem processes in agricultural streams</article-title>
+      <publisher-name>Freshwater Biology</publisher-name>
+      <publisher-loc>USA</publisher-loc>
+      <year iso-8601-date="2016">2016</year>
+      <volume>61</volume>
+      <issue>4</issue>
+      <uri>https://doi-org.ezproxy2.library.colostate.edu/10.1111/fwb.12721</uri>
+      <pub-id pub-id-type="doi">10.1111/fwb.12721</pub-id>
+      <fpage>486</fpage>
+      <lpage>499</lpage>
+    </element-citation>
+  </ref>
+  <ref id="ref-Brazier2020">
+    <element-citation publication-type="article-journal">
+      <person-group person-group-type="author">
+        <name><surname>Brazier</surname><given-names>Puttock</given-names><suffix>R. E.</suffix></name>
+      </person-group>
+      <article-title>Beaver: Nature’s ecosystem engineers</article-title>
+      <publisher-name>WIREs Water</publisher-name>
+      <publisher-loc>USA</publisher-loc>
+      <year iso-8601-date="2020">2020</year>
+      <volume>8</volume>
+      <issue>1</issue>
+      <uri>https://doi.org/10.1002/wat2.1494</uri>
+      <pub-id pub-id-type="doi">10.1002/wat2.1494</pub-id>
+    </element-citation>
+  </ref>
+  <ref id="ref-Dewey2022">
+    <element-citation publication-type="article-journal">
+      <person-group person-group-type="author">
+        <name><surname>Dewey</surname><given-names>Fox</given-names><suffix>C.</suffix></name>
+      </person-group>
+      <article-title>Beaver dams overshadow climate extremes in controlling riparian hydrology and water quality</article-title>
+      <publisher-name>Nature Communications</publisher-name>
+      <publisher-loc>USA</publisher-loc>
+      <year iso-8601-date="2022">2022</year>
+      <volume>13</volume>
+      <issue>6509</issue>
+      <uri>https://doi.org/10.1038/s41467-022-34022-0</uri>
+      <pub-id pub-id-type="doi">10.1038/s41467-022-34022-0</pub-id>
+    </element-citation>
+  </ref>
+  <ref id="ref-Gao2011">
+    <element-citation publication-type="article-journal">
+      <person-group person-group-type="author">
+        <name><surname>Gao</surname><given-names>Vano</given-names><suffix>Y.</suffix></name>
+      </person-group>
+      <article-title>Evaluating climate change over the colorado river basin using regional climate models</article-title>
+      <publisher-name>Journal of Geophysical Research: Atmospheres</publisher-name>
+      <year iso-8601-date="2011">2011</year>
+      <volume>116</volume>
+      <issue>D13</issue>
+      <uri>https://doi.org/10.1029/2010JD015278</uri>
+    </element-citation>
+  </ref>
+  <ref id="ref-Nash1993">
+    <element-citation publication-type="article-journal">
+      <person-group person-group-type="author">
+        <name><surname>Nash</surname><given-names>P. H.</given-names><suffix>L. L. &amp; Gleick</suffix></name>
+      </person-group>
+      <article-title>The colorado river basin and climatic change</article-title>
+      <publisher-name>Pacific Institute for Studies in Development, Environment,; Security</publisher-name>
+      <year iso-8601-date="1993">1993</year>
+      <uri>http://www.onthecolorado.org/resources/ClimateDocs/NashGleick1993.pdf</uri>
+    </element-citation>
+  </ref>
+  <ref id="ref-Abbasi2024">
+    <element-citation publication-type="article-journal">
+      <person-group person-group-type="author">
+        <name><surname>Abbasi</surname><given-names>J.</given-names></name>
+      </person-group>
+      <article-title>Bird flu outbreak in dairy cows is widespread, raising public health concerns</article-title>
+      <publisher-name>JAmA</publisher-name>
+      <year iso-8601-date="2024">2024</year>
+      <volume>331</volume>
+      <issue>21</issue>
+      <uri>https://pubmed.ncbi.nlm.nih.gov/38718040/</uri>
+      <pub-id pub-id-type="doi">10.1001/jama.2024.8886</pub-id>
+    </element-citation>
+  </ref>
+  <ref id="ref-Furlan2017">
+    <element-citation publication-type="article-journal">
+      <person-group person-group-type="author">
+        <name><surname>Furlan</surname><given-names>C</given-names><suffix>C. &amp; Mortarino</suffix></name>
+      </person-group>
+      <article-title>Forecasting the impact of renewable energies in competition with non-renewable sources</article-title>
+      <publisher-name>Renewable; Sustainable Energy Reviews</publisher-name>
+      <year iso-8601-date="2017">2017</year>
+      <volume>81</volume>
+      <uri>https://doi.org/10.1016/j.rser.2017.05.284</uri>
+      <pub-id pub-id-type="doi">10.1016/j.rser.2017.05.284</pub-id>
+    </element-citation>
+  </ref>
+  <ref id="ref-Greiner2013">
+    <element-citation publication-type="article-journal">
+      <person-group person-group-type="author">
+        <name><surname>Greiner</surname><given-names>Grüne</given-names><suffix>A.</suffix></name>
+      </person-group>
+      <article-title>Economic growth and the transition from non-renewable to renewable energy</article-title>
+      <publisher-name>Environment; development economies</publisher-name>
+      <year iso-8601-date="2013">2013</year>
+      <volume>19</volume>
+      <issue>4</issue>
+      <pub-id pub-id-type="doi">10.1017/S1355770X13000491</pub-id>
+    </element-citation>
+  </ref>
+  <ref id="ref-Hunter2022">
+    <element-citation publication-type="article-journal">
+      <person-group person-group-type="author">
+        <name><surname>Hunter</surname><given-names>P.</given-names></name>
+      </person-group>
+      <article-title>Europe’s worst ever bird flu outbreak: Thus year’s epidemic of highly pathogenic avian flu has had a devastating impact on wild and domestic birds and severe economic consequences</article-title>
+      <publisher-name>EMBO Reports</publisher-name>
+      <year iso-8601-date="2022">2022</year>
+      <volume>23</volume>
+      <issue>10</issue>
+      <uri>https://www.embopress.org/doi/full/10.15252/embr.202256048</uri>
+    </element-citation>
+  </ref>
+  <ref id="ref-Rigolon2018">
+    <element-citation publication-type="article-journal">
+      <person-group person-group-type="author">
+        <name><surname>Rigolon</surname><given-names>Browning</given-names><suffix>A.</suffix></name>
+      </person-group>
+      <article-title>Inequities in the quality of urban park systems: An environmental justice investigation of cities in the united states</article-title>
+      <publisher-name>Landscape; Urban Planning</publisher-name>
+      <year iso-8601-date="2018">2018</year>
+      <volume>178</volume>
+      <uri>https://doi.org/10.1016/j.landurbplan.2018.05.026</uri>
+      <pub-id pub-id-type="doi">10.1016/j.landurbplan.2018.05.026</pub-id>
+      <fpage>156</fpage>
+      <lpage>169</lpage>
+    </element-citation>
+  </ref>
+  <ref id="ref-WHO2016">
+    <element-citation publication-type="article-journal">
+      <person-group person-group-type="author">
+        <name><surname>Organization</surname><given-names>World Health</given-names></name>
+      </person-group>
+      <article-title>Urban green spaces and health</article-title>
+      <publisher-name>World Health Organization</publisher-name>
+      <year iso-8601-date="2016">2016</year>
+      <uri>https://iris.who.int/handle/10665/345751</uri>
+    </element-citation>
+  </ref>
+  <ref id="ref-CWCB2021">
+    <element-citation publication-type="article-journal">
+      <person-group person-group-type="author">
+        <name><surname>CWCB</surname><given-names>DNR</given-names></name>
+      </person-group>
+      <article-title>Colorado water plan</article-title>
+      <publisher-name>CWCB</publisher-name>
+      <uri>https://cwcb.colorado.gov/colorado-water-plan</uri>
+    </element-citation>
+  </ref>
+  <ref id="ref-Williams2022">
+    <element-citation publication-type="article-journal">
+      <person-group person-group-type="author">
+        <name><surname>Williams</surname><given-names>Cook</given-names><suffix>A. P.</suffix></name>
+      </person-group>
+      <article-title>Rapid intensification of the emerging southwestern north american megadrought in 2020–2021</article-title>
+      <publisher-name>Nature Climate Change</publisher-name>
+      <year iso-8601-date="2022">2022</year>
+      <volume>12</volume>
+      <uri>https://doi.org/10.1038/s41558-022-01290-z</uri>
+    </element-citation>
+  </ref>
+</ref-list>
+</back>
+
+<!-- (F2ED4C6E)[nb-1]:C:\ESS330\git\Final-Project\setup.qmd -->
+
+</article>
