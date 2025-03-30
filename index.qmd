@@ -81,7 +81,7 @@ We will identify how much each renewable and non-renewable energy contributes to
 ## Proposed Methods:
 
 We are going to look for datasets that have the amount of energy produced by each source of energy. The timeline should be recent, so the maximum is looking at the energy production during the past 10 years. The country that will be used is the United States of America. We will calculate the total energy and find
-the percentage each source contributes to the total energy produced. The data used may be from this website: Opendata - U.S. Energy Information Administration (EIA)
+the percentage each source contributes to the total energy produced. The data used may be from this website: https://www.eia.gov/opendata/ 
 
 ## Expected Outcomes:
 
