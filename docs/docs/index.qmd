@@ -10,8 +10,6 @@ format:
     resources:
       -images/droughtmonitorimg.jpg
       -images/SPlimg.png
-execute: 
-  echo: true
 ---
 
 ::: {.author-note}

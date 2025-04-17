@@ -1,137 +1,205 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="generator" content="quarto-1.5.57">
 
-<meta charset="utf-8">
-<meta name="generator" content="quarto-1.5.57">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <meta name="author" content="Leila Aburomia">
+    <meta name="author" content="Aldair Perez">
+    <meta name="author" content="Noah Goodhart">
 
-<meta name="author" content="Leila Aburomia">
-<meta name="author" content="Aldair Perez">
-<meta name="author" content="Noah Goodhart">
+    <title>ESS 330 Project Proposals &amp; Intro/Methods Draft</title>
+    <style>
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      div.columns{display: flex; gap: min(4vw, 1.5em);}
+      div.column{flex: auto; overflow-x: auto;}
+      div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+      ul.task-list{list-style: none;}
+      ul.task-list li input[type="checkbox"] {
+        width: 0.8em;
+        margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+        vertical-align: middle;
+      }
+      /* CSS for syntax highlighting */
+      pre > code.sourceCode { white-space: pre; position: relative; }
+      pre > code.sourceCode > span { line-height: 1.25; }
+      pre > code.sourceCode > span:empty { height: 1.2em; }
+      .sourceCode { overflow: visible; }
+      code.sourceCode > span { color: inherit; text-decoration: inherit; }
+      div.sourceCode { margin: 1em 0; }
+      pre.sourceCode { margin: 0; }
+      @media screen {
+      div.sourceCode { overflow: auto; }
+      }
+      @media print {
+      pre > code.sourceCode { white-space: pre-wrap; }
+      pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+      }
+      pre.numberSource code
+        { counter-reset: source-line 0; }
+      pre.numberSource code > span
+        { position: relative; left: -4em; counter-increment: source-line; }
+      pre.numberSource code > span > a:first-child::before
+        { content: counter(source-line);
+          position: relative; left: -1em; text-align: right; vertical-align: baseline;
+          border: none; display: inline-block;
+          -webkit-touch-callout: none; -webkit-user-select: none;
+          -khtml-user-select: none; -moz-user-select: none;
+          -ms-user-select: none; user-select: none;
+          padding: 0 4px; width: 4em;
+        }
+      pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+      div.sourceCode
+        {   }
+      @media screen {
+      pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+      }
+      /* CSS for citations */
+      div.csl-bib-body { }
+      div.csl-entry {
+        clear: both;
+        margin-bottom: 0em;
+      }
+      .hanging-indent div.csl-entry {
+        margin-left:2em;
+        text-indent:-2em;
+      }
+      div.csl-left-margin {
+        min-width:2em;
+        float:left;
+      }
+      div.csl-right-inline {
+        margin-left:2em;
+        padding-left:1em;
+      }
+      div.csl-indent {
+        margin-left: 2em;
+      }    </style>
 
-<title>ESS 330 Project Proposals &amp; Intro/Methods Draft</title>
-<style>
-code{white-space: pre-wrap;}
-span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
-div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-ul.task-list{list-style: none;}
-ul.task-list li input[type="checkbox"] {
-  width: 0.8em;
-  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
-  vertical-align: middle;
-}
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
-/* CSS for citations */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-  margin-bottom: 0em;
-}
-.hanging-indent div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}</style>
+    <style>
+      body.hypothesis-enabled #quarto-embed-header {
+        padding-right: 36px;
+      }
 
+      #quarto-embed-header {
+        height: 3em;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: solid 1px;
+      }
 
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
-<script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
-<link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
-<link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
-<script async="" src="https://hypothes.is/embed.js"></script>
+      #quarto-embed-header h6 {
+        font-size: 1.1em;
+        padding-top: 0.6em;
+        margin-left: 1em;
+        margin-right: 1em;
+        font-weight: 400;
+      }
+
+      #quarto-embed-header a.quarto-back-link,
+      #quarto-embed-header a.quarto-download-embed {
+        font-size: 0.8em;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        margin-left: 1em;
+        margin-right: 1em;
+      }
+
+      .quarto-back-container {
+        padding-left: 0.5em;
+        display: flex;
+      }
+
+      .headroom {
+          will-change: transform;
+          transition: transform 200ms linear;
+      }
+
+      .headroom--pinned {
+          transform: translateY(0%);
+      }
+
+      .headroom--unpinned {
+          transform: translateY(-100%);
+      }      
+    </style>
+
+    <script>
+    window.document.addEventListener("DOMContentLoaded", function () {
+
+      var header = window.document.querySelector("#quarto-embed-header");
+      const titleBannerEl = window.document.querySelector("body > #title-block-header");
+      if (titleBannerEl) {
+        titleBannerEl.style.paddingTop = header.clientHeight + "px";
+      }
+      const contentEl = window.document.getElementById('quarto-content');
+      for (const child of contentEl.children) {
+        child.style.paddingTop = header.clientHeight + "px";
+        child.style.marginTop = "1em";
+      }
+
+      // Use the article root if the `back` call doesn't work. This isn't perfect
+      // but should typically work
+      window.quartoBackToArticle = () => {
+        var currentUrl = window.location.href;
+        window.history.back();
+        setTimeout(() => {
+            // if location was not changed in 100 ms, then there is no history back
+            if(currentUrl === window.location.href){              
+                // redirect to site root
+                window.location.href = ".....html";
+            }
+        }, 100);
+      }
+
+      const headroom = new window.Headroom(header, {
+        tolerance: 5,
+        onPin: function () {
+        },
+        onUnpin: function () {
+        },
+      });
+      headroom.init();
+    });
+    </script>
+
+    
+<script src="../../site_libs/manuscript-notebook/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
+     <script async="" src="https://hypothes.is/embed.js"></script>
 <script>
   window.document.addEventListener("DOMContentLoaded", function (_event) {
     document.body.classList.add('hypothesis-enabled');
   });
-</script>
+</script>  
+      </head>
 
+  <body class="quarto-notebook">
+    <div id="quarto-embed-header" class="headroom fixed-top bg-primary">
+      
+      <a onclick="window.quartoBackToArticle(); return false;" class="btn btn-primary quarto-back-link" href=""><i class="bi bi-caret-left"></i> Back to Article</a>
+      <h6><i class="bi bi-journal-code"></i> ESS 330 Project Proposals &amp; Intro/Methods Draft</h6>
 
-<meta name="citation_title" content="ESS 330 Project Proposals &amp;amp; Intro/Methods Draft">
-<meta name="citation_author" content="Leila Aburomia">
-<meta name="citation_author" content="Aldair Perez">
-<meta name="citation_author" content="Noah Goodhart">
-<meta name="citation_language" content="en">
-<meta name="citation_reference" content="citation_title=Habitat engineering by beaver benefits aquatic biodiversity and ecosystem processes in agricultural streams;,citation_author=McLean Law;,citation_publication_date=2016;,citation_cover_date=2016;,citation_year=2016;,citation_fulltext_html_url=https://doi-org.ezproxy2.library.colostate.edu/10.1111/fwb.12721;,citation_issue=4;,citation_doi=10.1111/fwb.12721;,citation_volume=61;,citation_publisher=Freshwater Biology;">
-<meta name="citation_reference" content="citation_title=Beaver: Nature’s ecosystem engineers;,citation_author=Puttock Brazier;,citation_publication_date=2020;,citation_cover_date=2020;,citation_year=2020;,citation_fulltext_html_url=https://doi.org/10.1002/wat2.1494;,citation_issue=1;,citation_doi=10.1002/wat2.1494;,citation_volume=8;,citation_publisher=WIREs Water;">
-<meta name="citation_reference" content="citation_title=Beaver dams overshadow climate extremes in controlling riparian hydrology and water quality;,citation_author=Fox Dewey;,citation_publication_date=2022;,citation_cover_date=2022;,citation_year=2022;,citation_fulltext_html_url=https://doi.org/10.1038/s41467-022-34022-0;,citation_issue=6509;,citation_doi=10.1038/s41467-022-34022-0;,citation_volume=13;,citation_publisher=Nature Communications;">
-<meta name="citation_reference" content="citation_title=Evaluating climate change over the colorado river basin using regional climate models;,citation_author=Vano Gao;,citation_publication_date=2011;,citation_cover_date=2011;,citation_year=2011;,citation_fulltext_html_url=https://doi.org/10.1029/2010JD015278;,citation_issue=D13;,citation_volume=116;,citation_publisher=Journal of Geophysical Research: Atmospheres;">
-<meta name="citation_reference" content="citation_title=The colorado river basin and climatic change;,citation_author=P. H. Nash;,citation_publication_date=1993;,citation_cover_date=1993;,citation_year=1993;,citation_fulltext_html_url=http://www.onthecolorado.org/resources/ClimateDocs/NashGleick1993.pdf;,citation_publisher=Pacific Institute for Studies in Development, Environment,; Security;">
-<meta name="citation_reference" content="citation_title=Bird flu outbreak in dairy cows is widespread, raising public health concerns;,citation_author=J. Abbasi;,citation_publication_date=2024;,citation_cover_date=2024;,citation_year=2024;,citation_fulltext_html_url=https://pubmed.ncbi.nlm.nih.gov/38718040/;,citation_issue=21;,citation_doi=10.1001/jama.2024.8886;,citation_volume=331;,citation_publisher=JAmA;">
-<meta name="citation_reference" content="citation_title=Forecasting the impact of renewable energies in competition with non-renewable sources;,citation_author=C Furlan;,citation_publication_date=2017;,citation_cover_date=2017;,citation_year=2017;,citation_fulltext_html_url=https://doi.org/10.1016/j.rser.2017.05.284;,citation_doi=10.1016/j.rser.2017.05.284;,citation_volume=81;,citation_publisher=Renewable; Sustainable Energy Reviews;">
-<meta name="citation_reference" content="citation_title=Economic growth and the transition from non-renewable to renewable energy;,citation_author=Grüne Greiner;,citation_publication_date=2013;,citation_cover_date=2013;,citation_year=2013;,citation_issue=4;,citation_doi=10.1017/S1355770X13000491;,citation_volume=19;,citation_publisher=Environment; development economies;">
-<meta name="citation_reference" content="citation_title=Europe’s worst ever bird flu outbreak: Thus year’s epidemic of highly pathogenic avian flu has had a devastating impact on wild and domestic birds and severe economic consequences;,citation_author=P. Hunter;,citation_publication_date=2022;,citation_cover_date=2022;,citation_year=2022;,citation_fulltext_html_url=https://www.embopress.org/doi/full/10.15252/embr.202256048;,citation_issue=10;,citation_volume=23;,citation_publisher=EMBO Reports;">
-<meta name="citation_reference" content="citation_title=Inequities in the quality of urban park systems: An environmental justice investigation of cities in the united states;,citation_author=Browning Rigolon;,citation_publication_date=2018;,citation_cover_date=2018;,citation_year=2018;,citation_fulltext_html_url=https://doi.org/10.1016/j.landurbplan.2018.05.026;,citation_doi=10.1016/j.landurbplan.2018.05.026;,citation_volume=178;,citation_publisher=Landscape; Urban Planning;">
-<meta name="citation_reference" content="citation_title=Urban green spaces and health;,citation_author=World Health Organization;,citation_publication_date=2016;,citation_cover_date=2016;,citation_year=2016;,citation_fulltext_html_url=https://iris.who.int/handle/10665/345751;,citation_publisher=World Health Organization;">
-<meta name="citation_reference" content="citation_title=Colorado water plan;,citation_author=DNR CWCB;,citation_fulltext_html_url=https://cwcb.colorado.gov/colorado-water-plan;,citation_publisher=CWCB;">
-<meta name="citation_reference" content="citation_title=Rapid intensification of the emerging southwestern north american megadrought in 2020–2021;,citation_author=Cook Williams;,citation_publication_date=2022;,citation_cover_date=2022;,citation_year=2022;,citation_fulltext_html_url=https://doi.org/10.1038/s41558-022-01290-z;,citation_volume=12;,citation_publisher=Nature Climate Change;">
-<meta name="citation_reference" content="citation_title=Analysis of drought determinants for the colorado river basin;,citation_author=G. B. Balling;,citation_publication_date=2007;,citation_cover_date=2007;,citation_year=2007;,citation_fulltext_html_url=https://doi.org/10.1007/s10584-006-9157-8;,citation_volume=82;,citation_publisher=Climatic Change;">
-<meta name="citation_reference" content="citation_title=Precipitation in the colorado river basin and its low frequency associations with PDO and ENSO signals;,citation_author=Gonzales Canon;,citation_publication_date=2007;,citation_cover_date=2007;,citation_year=2007;,citation_fulltext_html_url=https://doi.org/10.1016/j.jhydrol.2006.08.015;,citation_volume=333;,citation_publisher=Journal of Hydrology;">
-<meta name="citation_reference" content="citation_title=A history of drought in colorado: Lessons learned and what lies ahead;,citation_author=Doesken Mckee;,citation_publication_date=2000;,citation_cover_date=2000;,citation_year=2000;,citation_fulltext_html_url=https://api.mountainscholar.org/server/api/core/bitstreams/ef0efa56-be33-419b-8a6b-db671c07ca2c/content;,citation_volume=9;,citation_publisher=Mountain Scholar;">
-<meta name="citation_reference" content="citation_title=El nino and la nina: Causes and global consequences;,citation_author=M. J. McPhaden;,citation_publication_date=2002;,citation_cover_date=2002;,citation_year=2002;,citation_volume=1;,citation_publisher=Encyclopedia of Global Environmental Change;">
-<meta name="citation_reference" content="citation_title=Characterizing extremes over americas;,citation_author=undefined NASA;,citation_fulltext_html_url=https://gmao.gsfc.nasa.gov/research/subseasonal/atlas/SPI-html/SPI-description.html;,citation_publisher=NASA;">
-<meta name="citation_reference" content="citation_title=El nino and la nina years and intensities;,citation_author=J. Null;,citation_fulltext_html_url=https://ggweather.com/enso/oni.htm;">
-<meta name="citation_reference" content="citation_title=Colorado. | u.s. Drought monitor.;,citation_author=&amp;amp;amp; Artusa Simeral;,citation_publication_date=2025;,citation_cover_date=2025;,citation_year=2025;,citation_fulltext_html_url=https://droughtmonitor.unl.edu/CurrentMap/StateDroughtMonitor.aspx?CO;">
-<meta name="citation_reference" content="citation_title=2000 years of drought variability in the central united states;,citation_author=undefined Woodhouse;,citation_author=J. T. Overpeck;,citation_publication_date=1998;,citation_cover_date=1998;,citation_year=1998;,citation_fulltext_html_url=https://doi.org/10.1175/1520-0477(1998)079&amp;amp;amp;lt;2693:YODVIT&amp;gt;2.0.CO;2.;,citation_volume=79;,citation_publisher=Bull. Amer. Meteor. Soc.;">
-</head>
+            <a href="../../docs/docs/index.qmd" class="btn btn-primary quarto-download-embed" download="index.qmd">Download Source</a>
+          </div>
 
-<body>
-
-<header id="title-block-header" class="quarto-title-block default toc-left page-columns page-full">
+     <header id="title-block-header" class="quarto-title-block default toc-left page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
       <h1 class="title">ESS 330 Project Proposals &amp; Intro/Methods Draft</h1>
@@ -220,18 +288,13 @@ div.csl-indent {
   <li><a href="#identify-your-preliminary-methods" id="toc-identify-your-preliminary-methods" class="nav-link" data-scroll-target="#identify-your-preliminary-methods">Identify your preliminary methods</a></li>
   </ul></li>
   </ul>
-<div class="quarto-alternate-notebooks"><h2>Notebooks</h2><ul><li><a href="index-preview.html"><i class="bi bi-journal-code"></i>Article Notebook</a></li><li><a href="docs\docs\index-preview.html"><i class="bi bi-journal-code"></i>ESS 330 Project Proposals &amp; Intro/Methods Draft</a></li><li><a href="docs\index-preview.html"><i class="bi bi-journal-code"></i>ESS 330 Project Proposals &amp; Intro/Methods Draft</a></li><li><a href="docs\Methodology-preview.html"><i class="bi bi-journal-code"></i>methodology</a></li><li><a href="Methodology-preview.html"><i class="bi bi-journal-code"></i>methodology</a></li><li><a href="docs\setup-preview.html"><i class="bi bi-journal-code"></i>Project Setup</a></li><li><a href="setup.embed-preview.html"><i class="bi bi-journal-code"></i>Project Setup</a></li></ul></div></nav>
+</nav>
 </div>
 <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
 </div>
-<main class="content quarto-banner-title-block" id="quarto-document-content">
+<main class="content quarto-banner-title-block" id="quarto-document-content">      
 
-
-
-  
-
-
-<div class="author-note">
+       <div class="author-note">
 <p>📩 *Corresponding author: Leila Aburomia</p>
 </div>
 <section id="project-proposals" class="level1">
@@ -404,20 +467,20 @@ div.csl-indent {
 <section id="introduction-background-and-motivation" class="level2">
 <h2 class="anchored" data-anchor-id="introduction-background-and-motivation">Introduction, Background, and Motivation</h2>
 <p>Over the past decade, the western United States has experienced hydroclimatic variability that has emerged as a dominant environmental issue of great concern (<span class="citation" data-cites="Balling2007">Balling (<a href="#ref-Balling2007" role="doc-biblioref">2007</a>)</span>). Since 1996, a considerable portion of the western U.S. has seen drought conditions that are similar in scale to the historical droughts in the 1930s and 1950s (<span class="citation" data-cites="Balling2007">Balling (<a href="#ref-Balling2007" role="doc-biblioref">2007</a>)</span>). Studies have also used the paleoclimatic record to reveal evidence of long term droughts over the past 500 to 2,000 years (<span class="citation" data-cites="Woodhouse1998">Woodhouse &amp; Overpeck (<a href="#ref-Woodhouse1998" role="doc-biblioref">1998</a>)</span>). Hydroclimatic variability studies range in scale from regional to watershed. This variability is often complex and may require a multitude of scales to fully understand and plan for future drought conditions. In the dry western U.S., Colorado receives less than 17 inches of average annual precipitation statewide. (<span class="citation" data-cites="Mckee2000">Mckee (<a href="#ref-Mckee2000" role="doc-biblioref">2000</a>)</span>). In comparison to the rest of the United States, these rainfall amounts are incredibly sparse. Luckily, Colorado’s Rocky Mountains help alleviate potential water stress by collecting more than 25 inches of precipitation annually (<span class="citation" data-cites="Mckee2000">Mckee (<a href="#ref-Mckee2000" role="doc-biblioref">2000</a>)</span>). By successfully adapting to this dry climate, Colorado supports a massive agricultural and recreational industry and multiple growing urban centers (<span class="citation" data-cites="Mckee2000">Mckee (<a href="#ref-Mckee2000" role="doc-biblioref">2000</a>)</span>). As population and industry grow, the threat of drought and its social, economic, and environmental impacts increase as well. Measuring and assessing drought accurately is essential for future planning. Historical drought data can give valuable insight into influences or indicators of drought conditions. Patterns of climatic variability that aligned with droughts in the past can help our society better prepare for the future. One of these patterns is the influential El Nino and La Nina. El Nino is caused by a warming of the tropical Pacific Ocean that occurs about every three to seven years and lasts for 12-18 months (<span class="citation" data-cites="McPhaden2002">McPhaden (<a href="#ref-McPhaden2002" role="doc-biblioref">2002</a>)</span>). La Nina is akin to El Nino with stronger than normal trade winds and cooler tropical Pacific water temperatures (<span class="citation" data-cites="McPhaden2002">McPhaden (<a href="#ref-McPhaden2002" role="doc-biblioref">2002</a>)</span>). In recent decades, the El Nino/Southern Oscillation (ENSO) has been more closely monitored, and the strength of each cycle has been documented. The effects of El Nino and La Nina on climate vary considerably across the globe, but in the western U.S., there is a pattern of impacts. During El Nino years, both extremely wet and dry conditions can be expected, while La Nina years are characterized by only dry conditions (<span class="citation" data-cites="Canon2007">Canon (<a href="#ref-Canon2007" role="doc-biblioref">2007</a>)</span>). This research aims to analyze interactions between climatic variability indicating drought and the ENSO cycle. To examine interactions between drought conditions and the El Nino/Southern Oscillation (ENSO), we will utilize a variety of climatic data. To create a framework for drought, we will use the Standardized Precipitation Index (SPI) from the National Integrated Drought Information System to measure how much observed precipitation deviated from the climatological average. This condition can be measured on a variety of time scales, indicating that the SPI can be useful for both short-term and long-term applications (<span class="citation" data-cites="NASA">NASA (<a href="#ref-NASA" role="doc-biblioref">n.d.</a>)</span>). The unit of SPI can be interpreted as “standard deviations”. We will also use the Drought Monitor of Colorado from the USDM to assess the severity and extent of drought using their standardized classification system. This data uses six classifications to characterize drought severity: normal conditions, abnormally dry (D0), and four levels of drought (D1 to D4) representing moderate, severe, extreme, and exceptional drought conditions, respectively. Lastly, we will utilize SNOTEL snowpack data from the Natural Resource Conservation Service to supplement our drought framework. In order to compare this data to ENSO cycles, we will examine El Niño and La Niña intensities for each year based on the Oceanic Nino Index (ONI). This index is the standard for NOAA used to classify El Nino and La Nina events in the eastern tropical Pacific (<span class="citation" data-cites="Null">Null (<a href="#ref-Null" role="doc-biblioref">n.d.</a>)</span>). Events are defined as five consecutive 3-month periods at or above the + 0.5 degrees threshold for warm (El Nino) events and at or below the - 0.5 degrees anomaly for cool (La Nina) events (<span class="citation" data-cites="Null">Null (<a href="#ref-Null" role="doc-biblioref">n.d.</a>)</span>). To find correlations between our drought framework and ENSO cycles, we will use R software to conduct statistical tests. First, we will preprocess our data by aligning datasets by date. For snowpack and SPI we will standardise to monthly averages and for drought monitor, we will summarize weekly data to monthly. Our statistical methods will include a correlation analysis to test correlations between ENSO index (ONI) and drought variables. We will use the Pearson correlation coefficient to measure the linear relationship. Then we will use ggplot2 to visualize the trends in a scatter plot and add a linear regression line to help visualize the relationship. If the correlation is significant, we will perform a correlation hypothesis test to provide us with the correlation coefficient and p-value. Next, we will conduct a time series analysis of cross-correlation to look for lagged effects of ENSO on drought parameters. We will also use a linear regression model to model SPI and snowpack as a function of ONI. In conclusion, these findings will help us find a relationship between El Nino/La Nina and drought in Colorado. If so, we can produce the evidence through statistical findings and visual representations, such as a scatter plot and a linear regression model. Considering we are living in a society becoming more conscious about climate change and its environmental impacts, such as more extreme drought events, this project will enforce our involvement in the understanding aspects of our global environment and comprehend to an extent on how global processes impact extreme weather.</p>
-<div class="cell">
+<div class="cell-container"><div class="cell-decorator"><pre>In [1]:</pre></div><div class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(here)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stderr hidden">
+<div class="cell-output cell-output-stderr">
 <pre><code>Warning: package 'here' was built under R version 4.4.3</code></pre>
 </div>
-<div class="cell-output cell-output-stderr hidden">
+<div class="cell-output cell-output-stderr">
 <pre><code>here() starts at C:/ESS330/git/Final-Project</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readxl)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stderr hidden">
+<div class="cell-output cell-output-stderr">
 <pre><code>Warning: package 'readxl' was built under R version 4.4.3</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>data1 <span class="ot">&lt;-</span> <span class="fu">read_excel</span>(<span class="fu">here</span>(<span class="st">"data"</span>, <span class="st">"Final_Data.xlsx"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stderr hidden">
+<div class="cell-output cell-output-stderr">
 <pre><code>New names:
 • `` -&gt; `...2`
 • `` -&gt; `...4`
@@ -439,28 +502,28 @@ div.csl-indent {
 • `` -&gt; `...22`</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">View</span>(data1)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<a class="quarto-notebook-link" id="nblink-1" href="index-preview.html">Source: Article Notebook</a></div>
+</div></div>
 </section>
 <section id="statistical-tests" class="level2">
 <h2 class="anchored" data-anchor-id="statistical-tests">statistical tests</h2>
-<div class="cell">
+<div class="cell-container"><div class="cell-decorator"><pre>In [2]:</pre></div><div class="cell">
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>enso <span class="ot">&lt;-</span> <span class="fu">as.numeric</span>(<span class="fu">as.character</span>(data1<span class="sc">$</span><span class="st">`</span><span class="at">El Niño &amp; La Niña Intensities</span><span class="st">`</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stderr hidden">
+<div class="cell-output cell-output-stderr">
 <pre><code>Warning: NAs introduced by coercion</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>spi <span class="ot">&lt;-</span> <span class="fu">as.numeric</span>(<span class="fu">as.character</span>(data1<span class="sc">$</span><span class="st">`</span><span class="at">SPI (precipitation) and extra drought Data</span><span class="st">`</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stderr hidden">
+<div class="cell-output cell-output-stderr">
 <pre><code>Warning: NAs introduced by coercion</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>enso <span class="ot">&lt;-</span> <span class="fu">na.omit</span>(enso)</span>
 <span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>spi <span class="ot">&lt;-</span> <span class="fu">na.omit</span>(spi)</span>
 <span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>enso <span class="ot">&lt;-</span> <span class="fu">as.numeric</span>(<span class="fu">as.character</span>(data1<span class="sc">$</span><span class="st">`</span><span class="at">El Niño &amp; La Niña Intensities</span><span class="st">`</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stderr hidden">
+<div class="cell-output cell-output-stderr">
 <pre><code>Warning: NAs introduced by coercion</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>spi <span class="ot">&lt;-</span> <span class="fu">as.numeric</span>(<span class="fu">as.character</span>(data1<span class="sc">$</span><span class="st">`</span><span class="at">SPI (precipitation) and extra drought Data</span><span class="st">`</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stderr hidden">
+<div class="cell-output cell-output-stderr">
 <pre><code>Warning: NAs introduced by coercion</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>df <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(enso, spi)</span>
@@ -479,13 +542,13 @@ sample estimates:
        cor 
 -0.2635248 </code></pre>
 </div>
-</div>
+</div></div>
 </section>
 <section id="exploring-data" class="level2">
 <h2 class="anchored" data-anchor-id="exploring-data">Exploring Data</h2>
 <p>Data for Drought</p>
 <p>1.Measurements/Parameters: Standardized Precipitation Index (SPI) To create a framework for drought, we will use the Standardized Precipitation Index (SPI) from the National Integrated Drought Information System to measure how much observed precipitation deviated from the climatological average. This condition can be measured on a variety of time scales, indicating that the SPI can be useful for both short-term and long-term applications (<span class="citation" data-cites="NASA">NASA (<a href="#ref-NASA" role="doc-biblioref">n.d.</a>)</span>). The unit of SPI can be interpreted as “standard deviations”. This data can be characterized as 9 months (1895 to present) or Paleoclimatic data (0 to 2017). SPI data can be separated by state or by county. To clean this data we will standardize monthly averages.</p>
-<div class="cell">
+<div class="cell-container"><div class="cell-decorator"><pre>In [3]:</pre></div><div class="cell">
 <div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: Standardized Precipitation Index </span></span>
 <span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a><span class="co">#| fig-cap: "SPI for Colorado"</span></span>
 <span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a><span class="co">#| fig-align: center</span></span>
@@ -493,31 +556,36 @@ sample estimates:
 <span id="cb19-5"><a href="#cb19-5" aria-hidden="true" tabindex="-1"></a><span class="co">#| fig-height: 4</span></span>
 <span id="cb19-6"><a href="#cb19-6" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">include_graphics</span>(here<span class="sc">::</span><span class="fu">here</span>(<span class="st">"images"</span>, <span class="st">"SPIimg.png"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<div>
+<div class="">
 <figure class="figure">
-<p><a href="images/SPIimg.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="images/SPIimg.png" class="img-fluid figure-img"></a></p>
+<p class=""><a href="../../images/SPIimg.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="../../images/SPIimg.png" class="img-fluid figure-img"></a></p>
 </figure>
 </div>
 </div>
-</div>
+</div></div>
 <ol start="2" type="1">
 <li>Drought Monitor for Colorado This dataset gives us the ranking of drought intensity in the state of Colorado. The ranking ranges from none, D0-D4. The map provided has the sections that indicate counties, which are colored in respect to the drought intensity. Some of the counties have more than 1 ranking, so we have to make a consensus as to selecting the intensity for the county. There’s a table underneath explaining the week, date, and the intensity of droughts. This data will be cleaned by standardization of data by month in order to measure with our other drought parameters. - Map based on 2025. - Drought Intensity Scale (none and D0 to D4). - Includes different counties (hover for name of county).</li>
 </ol>
-<div class="cell" data-layout-align="center">
-<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">include_graphics</span>(here<span class="sc">::</span><span class="fu">here</span>(<span class="st">"images"</span>, <span class="st">"droughtmonitorimg.jpg"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-container"><div class="cell-decorator"><pre>In [4]:</pre></div><div class="cell" data-layout-align="center">
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: droughtmonitor</span></span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a><span class="co">#| fig-cap: "Drought Monitor for Colorado"</span></span>
+<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a><span class="co">#| fig-align: center</span></span>
+<span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a><span class="co">#| fig-width: 6</span></span>
+<span id="cb20-5"><a href="#cb20-5" aria-hidden="true" tabindex="-1"></a><span class="co">#| fig-height: 4</span></span>
+<span id="cb20-6"><a href="#cb20-6" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">include_graphics</span>(here<span class="sc">::</span><span class="fu">here</span>(<span class="st">"images"</span>, <span class="st">"droughtmonitorimg.jpg"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="images/droughtmonitorimg.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="Drought Monitor for Colorado"><img src="images/droughtmonitorimg.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img" alt="Drought Monitor for Colorado"></a></p>
+<p class=""><a href="../../images/droughtmonitorimg.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="Drought Monitor for Colorado"><img src="../../images/droughtmonitorimg.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img" alt="Drought Monitor for Colorado"></a></p>
 </figure>
 </div>
 <figcaption>Drought Monitor for Colorado</figcaption>
 </figure>
 </div>
 </div>
-</div>
+</div></div>
 <p>Data for El Nino and La Nina:</p>
 <ol type="1">
 <li>El Nino/La Nina Intensities for each year The ONI (Oceanic Nino Index) classifies El Nino/La Nina events, which runs a 3-month mean. We can categorize the strength of the event, referencing the table provided (years place in their respective event and strength). We will do some categorization of the strength as well as differentiate the events with the given data that’s provided.</li>
@@ -526,11 +594,7 @@ sample estimates:
 <section id="identify-your-preliminary-methods" class="level2">
 <h2 class="anchored" data-anchor-id="identify-your-preliminary-methods">Identify your preliminary methods</h2>
 <p>For libraries we, we are most likely going to use “tidyverse” for data wrangling and visualization, “ggplot2” for graphing, “zoo” for time series data, “dplyr” for data manipulation, “tidyr” for data reshaping, “corrr” for correlation matrices, and “lmtest” for statistical tests. For our statistical analysis, we will most likely use “cor.test” to check for linear relationships between ENSO intensity and SPI, or the spearman method if we are unsure about linearity. After using “geom_boxplot” to visualize if SPI differs between El Niño, La Niña, and neutral years, we will use an Anova test to determine if the difference is significant, and then run a Tukey HSD post hoc test. Finally, to test how ENSO intensity predicts SPI, we will run a linear regression using “lm_model”. We hope to have the materials that we need. Having the 3 dataset above is a good start, and along the way, if we need more data, then we can include them. We are going to have to find a way to move the data to RStudio. Afterwards, we have to figure out the time scale for this project as to how many years we will include. Finally, we have to find a way to find out if there’s a correlation (or similar) between El Nino/La Nina and drought. We are hoping that we are able to align our datasets to make sure we can find the correlation and make a graph. We have to make sure that the datasets that we will be using can work in conjunction when it comes to the dates (month, years), SPI, snowpack, etc. If done correctly, we can proceed to do statistical analysis. The method helps us find a correlation between ONI and droughts, then perform a hypothesis test to look for correlation coefficient and p-value. We’ll also perform a linear regression model for SPI and snowpack. The findings will ensure us to find a relationship between El Nino.La Nina and drought using the dataset and using the appropriate functions to achieve those results.</p>
-
-</section>
-</section>
-
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list">
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list">
 <div id="ref-Abbasi2024" class="csl-entry" role="listitem">
 Abbasi, J. (2024). <em>Bird flu outbreak in dairy cows is widespread, raising public health concerns</em>. <em>331</em>(21). <a href="https://doi.org/10.1001/jama.2024.8886">https://doi.org/10.1001/jama.2024.8886</a>
 </div>
@@ -591,9 +655,11 @@ Williams, C., A. P. (2022). <em>Rapid intensification of the emerging southweste
 <div id="ref-Woodhouse1998" class="csl-entry" role="listitem">
 Woodhouse, C. A., &amp; Overpeck, J. T. (1998). <em>2000 years of drought variability in the central united states</em>. <em>79</em>, 2693–2714. <a href="https://doi.org/10.1175/1520-0477(1998)079<2693:YODVIT>2.0.CO;2.">https://doi.org/10.1175/1520-0477(1998)079&lt;2693:YODVIT&gt;2.0.CO;2.</a>
 </div>
-</div></section></div></main>
-<!-- /main column -->
-<script id="quarto-html-after-body" type="application/javascript">
+</div>
+</section>
+</section>
+     </main>
+<!-- /main column -->  <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
     const mode = bsSheetEl.getAttribute("data-mode");
@@ -1012,9 +1078,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
 });
-</script>
-</div> <!-- /content -->
-<script>var lightboxQuarto = GLightbox({"openEffect":"zoom","selector":".lightbox","loop":false,"descPosition":"bottom","closeEffect":"zoom"});
+</script>  </div> <!-- /content -->  <script>var lightboxQuarto = GLightbox({"selector":".lightbox","openEffect":"zoom","loop":false,"closeEffect":"zoom","descPosition":"bottom"});
 (function() {
   let previousOnload = window.onload;
   window.onload = () => {
@@ -1045,9 +1109,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   };
   
 })();
-          </script>
-
-
-
-
+          </script> 
+  
 </body></html>

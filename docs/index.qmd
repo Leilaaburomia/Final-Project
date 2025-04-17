@@ -10,6 +10,8 @@ format:
     resources:
       -images/droughtmonitorimg.jpg
       -images/SPlimg.png
+execute: 
+  echo: true
 ---
 
 ::: {.author-note}
@@ -207,7 +209,30 @@ To find correlations between our drought framework and ENSO cycles, we will use 
 In conclusion, these findings will help us find a relationship between El Nino/La Nina and drought in Colorado. If so, we can produce the evidence through statistical findings and visual representations, such as a scatter plot and a linear regression model. Considering we are living in a society becoming more conscious about climate change and its environmental impacts, such as more extreme drought events, this project will enforce our involvement in the understanding aspects of our global environment and comprehend to an extent on how global processes impact extreme weather.
 
 
+```{r}
 
+library(here)
+library(readxl)
+
+data1 <- read_excel(here("data", "Final_Data.xlsx"))
+
+View(data1)
+```
+
+## statistical tests
+
+```{r}
+enso <- as.numeric(as.character(data1$`El Niño & La Niña Intensities`))
+spi <- as.numeric(as.character(data1$`SPI (precipitation) and extra drought Data`))
+enso <- na.omit(enso)
+spi <- na.omit(spi)
+
+enso <- as.numeric(as.character(data1$`El Niño & La Niña Intensities`))
+spi <- as.numeric(as.character(data1$`SPI (precipitation) and extra drought Data`))
+df <- data.frame(enso, spi)
+df_clean <- na.omit(df)
+cor.test(df_clean$enso, df_clean$spi)
+```
 
 
 ## Exploring Data
