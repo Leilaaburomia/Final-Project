@@ -5,11 +5,12 @@ project:
 manuscript:
   article: index.qmd
 
+
 author: 
   - name: "Leila Aburomia"
     corresponding: true
   - name: "Aldair Perez"
-  - name: "Noah Goodhardt"
+  - name: "Noah Goodhart"
 
 bibliography: references.bib 
 csl: https://www.zotero.org/styles/apa

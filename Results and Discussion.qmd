@@ -1,0 +1,227 @@
+---
+title: "Results and Discussion"
+author:
+  - name: "Leila Aburomia"
+    corresponding: true
+  - name: "Aldair Perez"
+  - name: "Noah Goodhart"
+format: html
+execute: 
+  echo: true
+---
+
+## 1. Methods 
+```{r}
+library(here)
+library(readxl)
+
+# import Dataset as Tibble
+data1 <- read_excel(here("data", "Final_Data (1).xlsx"), col_names = FALSE)
+
+# change row 1 into column names
+colnames(data1) <- as.character(data1[1, ])
+data1 <- data1[-1, ]
+
+# Convert date (for reference column) from numeric to Date 
+data1$`Date (for Reference)` <- as.Date(as.numeric(data1$`Date (for Reference)`), origin = "1899-12-30")
+```
+
+### Clean and Reshape Data
+To make the data easier to analyze across multiple counties, we will pivot the data into a long format using tidyr. 
+```{r}
+library(dplyr)
+library(tidyr)
+
+# Select only the relevant columns (SPI/DSCI + ENSO + Date)
+long_data <- data1 %>%
+  select(`Date (for Reference)`, `ENSO Type`, `ENSO Severity`,
+         starts_with("Rolling SPI Average"), starts_with("Rolling DSCI Average")) %>%
+  pivot_longer(cols = starts_with("Rolling"),
+               names_to = "Variable",
+               values_to = "Value") %>%
+  extract(Variable, into = c("Metric_Type", "County"), regex = "^(.*) ([^ ]+)$")
+
+colnames(long_data) <- gsub(" ", "_", colnames(long_data))
+
+# swap ENSO severity with ENSO type
+long_data <- long_data %>%
+  rename(`Temp_Column` = `ENSO_Severity`)
+
+long_data <- long_data %>%
+  rename(
+    `ENSO_Severity` = `ENSO_Type`,
+    `ENSO_Type` = `Temp_Column`
+  )
+# add underscores in all column names 
+colnames(long_data) <- gsub(" ", "_", colnames(long_data))
+
+# convert ENSO_severity and value to numeric
+long_data$ENSO_Severity <- as.numeric(long_data$ENSO_Severity)
+long_data$Value <- as.numeric(long_data$Value)
+```
+
+### Visualization of relationships between ENSO severity and SPI/DSCI per county
+
+#### ENSO severity and Rolling SPI Average
+```{r}
+library(ggplot2)
+library(scales)
+library(dplyr)
+
+ggplot(long_data %>% filter(Metric_Type == "Rolling SPI Average"),
+       aes(x = `ENSO_Severity`, y = Value, color = County)) +
+  geom_point() +
+  geom_smooth(method = "lm") +
+  labs(title = "Relationship between ENSO Severity and Rolling SPI Average",
+       x = "ENSO Severity", y = "Rolling SPI Average") +
+   scale_y_continuous(labels = number_format(accuracy = 0.01)) +  
+  scale_x_continuous(labels = number_format(accuracy = 0.1)) +   
+  theme_minimal()
+```
+
+#### ENSO Severity and Rolling DSCI Average
+```{r}
+ggplot(long_data %>% filter(Metric_Type == "Rolling DSCI Average"),
+       aes(x = `ENSO_Severity`, y = Value, color = County)) +
+  geom_point() +
+  geom_smooth(method = "lm") +
+  labs(title = "Relationship between ENSO Severity and Rolling DSCI Average",
+       x = "ENSO Severity", y = "Rolling DSCI Average") +
+   scale_y_continuous(labels = number_format(accuracy = 0.01)) +  
+  scale_x_continuous(labels = number_format(accuracy = 0.1)) +   
+  theme_minimal()
+```
+
+
+### Statistical Tests
+```{r}
+# Pearson correlation by county
+cor_results <- long_data %>%
+  filter(Metric_Type == "Rolling SPI Average") %>%
+  group_by(County) %>%
+  summarise(correlation = cor(`ENSO_Severity`, Value, use = "complete.obs"),
+            .groups = "drop")
+
+print(cor_results)
+
+# Linear Regression by county 
+lm_results <- long_data %>%
+  filter(Metric_Type == "Rolling SPI Average") %>%
+  group_by(County) %>%
+  group_map(~ summary(lm(Value ~ `ENSO_Severity`, data = .x)))
+
+print(lm_results)
+
+```
+
+### Time Series Plots
+```{r}
+# more data cleaning
+
+library(dplyr)
+
+data1 <- data1 %>%
+  rename(Date = `Date (for Reference)`)
+
+long_data <- long_data %>%
+  rename(Date = `Date_(for_Reference)`)
+
+
+long_data <- long_data %>%
+  left_join(data1 %>% select(Date, Rolling_3_Month_Date = `Rolling 3 Month Date`), by = "Date")
+```
+
+#### Create a "Center Date" for the Rolling 3-Month Period
+```{r}
+# Create a lookup table for center months of each rolling period
+period_centers <- c(
+  "JFM" = "02", "FMA" = "03", "MAM" = "04", "AMJ" = "05",
+  "MJJ" = "06", "JJA" = "07", "JAS" = "08", "ASO" = "09",
+  "SON" = "10", "OND" = "11", "NDJ" = "12", "DJF" = "01"
+)
+
+# Add a "centered" date column
+long_data <- long_data %>%
+  mutate(
+    center_month = period_centers[`Rolling_3_Month_Date`],
+    year = lubridate::year(Date),
+    rolling_date = as.Date(paste(year, center_month, "15", sep = "-"))
+  )
+```
+
+#### Time Series Visualizations for SPI and ENSO 
+```{r}
+
+library(plotly)
+
+long_data <- long_data %>%
+  mutate(
+    ENSO_Phase = case_when(
+      ENSO_Type %in% c("WE", "ME", "SE", "VSE") ~ "El Nino",
+      ENSO_Type %in% c("WL", "ML", "SL") ~ "La Nina",
+      ENSO_Type == "NONE" ~ "Neutral",
+      TRUE ~ NA_character_ 
+    )
+  )
+
+
+enso_bands <- long_data %>%
+  select(rolling_date, ENSO_Phase) %>%
+  distinct() %>%
+  arrange(rolling_date) %>%
+  mutate(group = cumsum(ENSO_Phase != lag(ENSO_Phase, default = first(ENSO_Phase)))) %>%
+  group_by(group, ENSO_Phase) %>%
+  summarise(start = min(rolling_date), end = max(rolling_date), .groups = "drop")
+
+
+
+ggplot() +
+  geom_rect(data = enso_bands,
+            aes(xmin = start, xmax = end, ymin = -Inf, ymax = Inf, fill = ENSO_Phase),
+            alpha = 0.2) +
+  # SPI lines
+  geom_line(data = long_data %>% filter(Metric_Type == "Rolling SPI Average"),
+            aes(x = rolling_date, y = Value, color = County)) +
+  scale_fill_manual(values = c("El Nino" = "red", "La Nina" = "blue", "Neutral" = "gray")) +
+  labs(title = "SPI with ENSO Phase Overlays",
+       x = "Date", y = "Rolling SPI Average",
+       fill = "ENSO Phase", color = "County") +
+  theme_minimal()
+
+
+
+# Faceted Trends 
+ggplot() +
+  # ENSO shaded bands across all facets
+  geom_rect(data = enso_bands,
+            aes(xmin = start, xmax = end, ymin = -Inf, ymax = Inf, fill = ENSO_Phase),
+            alpha = 0.2, inherit.aes = FALSE) +
+  # SPI time series line
+  geom_line(data = long_data %>% filter(Metric_Type == "Rolling SPI Average"),
+            aes(x = rolling_date, y = Value, color = County)) +
+  facet_wrap(~County, scales = "free_y") +
+  scale_fill_manual(values = c("El Nino" = "red", "La Nina" = "blue", "Neutral" = "gray")) +
+  labs(title = "SPI Over Time with ENSO Phase Overlays",
+       x = "Date", y = "Rolling SPI Average",
+       fill = "ENSO Phase", color = "County") +
+  theme_minimal()
+
+```
+
+#### Time Series Visualizations for DSCI and ENSO
+```{r}
+ggplot() +
+  geom_rect(data = enso_bands,
+            aes(xmin = start, xmax = end, ymin = -Inf, ymax = Inf, fill = ENSO_Phase),
+            alpha = 0.2, inherit.aes = FALSE) +
+  geom_line(data = long_data %>% filter(Metric_Type == "Rolling DSCI Average"),
+            aes(x = rolling_date, y = Value, color = County)) +
+  facet_wrap(~County, scales = "free_y") +
+  scale_fill_manual(values = c("El Nino" = "red", "La Nina" = "blue", "Neutral" = "gray")) +
+  labs(title = "DSCI Over Time with ENSO Phase Overlays",
+       x = "Date", y = "Rolling DSCI Average",
+       fill = "ENSO Phase", color = "County") +
+  theme_minimal()
+
+```
+

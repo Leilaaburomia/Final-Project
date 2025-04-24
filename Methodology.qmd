@@ -1,4 +1,0 @@
----
-title: "methodology"
-editor: visual
----
