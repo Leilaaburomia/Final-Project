@@ -1,9 +1,8 @@
 project:
   type: manuscript
-  output-dir: docs
 
-manuscript:
-  article: index.qmd
+manuscript: 
+  article: Results and Discussion.qmd
 
 
 author: 
@@ -17,14 +16,9 @@ csl: https://www.zotero.org/styles/apa
 
 format:
   html:
-    comments:
-      hypothesis: true
-    title-block-banner: true
-  docx: default
-  jats: default
+    self-contained: true
 
-  # (other formats)
-  # pdf: default
+
 
 execute:
   freeze: true
